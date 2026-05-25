@@ -1,15 +1,17 @@
 /* Mobile-first — Clinton Comercial */
 :root {
-    --color-bg: #f4f6f8;
+    /* Identidade: verde principal #5B7047, verde escuro #323F27, fundo creme #F4F1E6 */
+    --color-bg: #f4f1e6;
     --color-surface: #ffffff;
-    --color-text: #1a2430;
-    --color-muted: #4b5968;
-    --color-border: #dbe2ea;
-    --color-accent: #0d4f8c;
-    --color-accent-hover: #093c6a;
-    --color-accent-soft: #ebeef0;
-    --shadow-sm: 0 1px 2px rgb(26 36 48 / 0.06);
-    --shadow-md: 0 8px 24px rgb(26 36 48 / 0.08);
+    --color-text: #323f27;
+    --color-muted: #5f6d54;
+    --color-border: #d5dcc8;
+    --color-accent: #5b7047;
+    --color-accent-hover: #323f27;
+    --color-accent-soft: #edf1e8;
+    --color-accent-light: #c5d6b5;
+    --shadow-sm: 0 1px 2px rgb(50 63 39 / 0.06);
+    --shadow-md: 0 8px 24px rgb(50 63 39 / 0.08);
     --radius: 12px;
     --radius-lg: 20px;
     --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
@@ -106,7 +108,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgb(244 246 248 / 0.92);
+    background: rgb(244 241 230 / 0.92);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--color-border);
 }
@@ -123,7 +125,7 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: var(--space-sm);
-    color: inherit;
+    color: var(--color-accent);
     text-decoration: none;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -142,7 +144,7 @@ a:hover {
 
 .logo__muted {
     font-weight: 500;
-    color: var(--color-muted);
+    color: var(--color-accent-hover);
 }
 
 .nav-toggle {
@@ -280,6 +282,12 @@ a:hover {
     inset: 0;
 }
 
+.hero__media picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .hero__img {
     width: 100%;
     height: 100%;
@@ -289,7 +297,7 @@ a:hover {
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgb(26 36 48 / 0.88), rgb(26 36 48 / 0.35));
+    background: linear-gradient(to top, rgb(50 63 39 / 0.88), rgb(50 63 39 / 0.35));
 }
 
 .hero__content {
@@ -490,7 +498,7 @@ a:hover {
     background: var(--color-surface);
     padding: var(--space-lg);
     border-radius: var(--radius);
-    border: 1px solid rgb(219 226 234 / 0.7);
+    border: 1px solid rgb(213 220 200 / 0.7);
 }
 
 .feature__title {
@@ -582,7 +590,7 @@ a:hover {
 }
 
 .site-footer a {
-    color: #b8d4f0;
+    color: var(--color-accent-light);
 }
 
 .footer-inner {
